@@ -7,6 +7,7 @@
 <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Merapi Adventure Jogja</title>
+<noscript><meta http-equiv="refresh" content="0; url=<?php echo site_url('home/jsoff');?>" /></noscript>
 <meta name="description" content="">
 <meta name="keywords" content="travel and tour , tour n travel , tour dan travel , website tour and travel , 
 antavaya tour package , tour and travel packages , travel dan tour , tour travel terbaik , web tour travel , 
@@ -53,7 +54,7 @@ antavaya tour travel  ">
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body oncontextmenu="return false;">
     <!-- Navigation
     ==========================================-->
     <nav id="mal-menu" class="navbar navbar-default navbar-fixed-top">
@@ -328,6 +329,9 @@ antavaya tour travel  ">
                 <?php } ?>
                 </div>
             </div>
+            <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GggsFOVi4lE"  frameborder="0" gesture="media" allowfullscreen></iframe>
+</div>
         </div>
     </section>
 
@@ -452,10 +456,14 @@ antavaya tour travel  ">
                     </div>
                     <div class="col-md-6 text-center"> <i class="fa fa-5x fa-map-marker"></i>
                         <address>
-        <strong>Twitter, Inc.</strong><br>
-        1355 Market Street, Suite 900<br>
-        San Francisco, CA 94103<br>
-        <abbr title="Phone">P:</abbr> (123) 456-7890
+        <strong>Merapi Adventure Jogja</strong><br>
+        Jalan Kaliurang Km.23 , 4 Sleman, Yogyakarta<br>
+        Indonesia<br>
+        <abbr title="Phone">Phone :</abbr> 0878-3999-8000 </br>
+        <abbr title="Phone">Phone:</abbr> 0812-8464-3000 </br>
+        <abbr title="Phone">Master:</abbr> 0896-7000-3660 </br>
+        <strong>Marketing</strong><br>
+        <strong>Mrs. Waljinem</strong><br>
         </address>
                     </div>
                 </div>
@@ -562,6 +570,22 @@ popup.init()
         </symbol>
     </svg>
 </body>
-
+<script>
+    document.onkeydown = function(e) {
+    if(event.keyCode == 123) {
+    return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+    return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+    return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+    return false;
+    }
+    }
+    
+</script>
 
 </html>

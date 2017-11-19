@@ -7,6 +7,7 @@ $route["superuser"] = "dashboard";
 $route["beranda"] = "dashboard";
 $route["photo"] = "m_photo/index";
 $route["promo"] = "m_promo/index";
+$route["ojologino"] = "auth";
 
 
 $route['404_override'] = '';

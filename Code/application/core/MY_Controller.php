@@ -13,7 +13,7 @@ class MY_Controller extends CI_Controller{
         //}
         // $this->output->cache(1);
         if (!$this->session->userdata['logged_in']) {
-            redirect('auth/');
+            redirect('ojologino/');
         }
     }
 }

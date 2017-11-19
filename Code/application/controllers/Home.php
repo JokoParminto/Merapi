@@ -4,6 +4,7 @@ class Home extends CI_Controller{
     {
         parent::__construct();
         $this->load->model('Home_model');
+        $this->load->library('encryption');
     }
 
     function index()
@@ -27,10 +28,15 @@ class Home extends CI_Controller{
         }
         $data['m_photo_atas'] = $this->Home_model->get_all_m_photo_atas();
         $data['m_photo_bawah'] = $this->Home_model->get_all_m_photo_bawah();
-        // $t = 1;
-        // while($t<100000000){ $t++;}
-        // $data['_view'] = 'dashboard';
+        $t = 1;
+        while($t<100000000){ $t++;}
+        $this->output->cache(1);
+        $data['_view'] = 'dashboard';
         $this->load->view('home', $data);
-        // $this->output->cache(1);
+        
+    }
+    function jsoff()
+    {
+        $this->load->view('jsoff');
     }
 }

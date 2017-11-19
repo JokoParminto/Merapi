@@ -44,10 +44,10 @@ class Auth extends CI_Controller
                 $this->session->set_userdata('logged_in', $session_data);
                 if ($this->session->userdata['logged_in']['level'] == 0) {
                     print_r("ini admin");
-                    redirect('dashboard/');
+                    redirect('beranda/');
                 }else{
                     print_r("silahkan buat halaman user");
-                    redirect('dashboard/');
+                    redirect('beranda/');
                 }
             }
         } else {
@@ -70,7 +70,7 @@ class Auth extends CI_Controller
         $this->session->unset_userdata('logged_in', $sess_array);
         $data['message_display'] = 'Successfully Logout';
         //$this->load->view('/login.php', $data);
-        redirect(base_url('auth/'));
+        redirect(base_url('ojologino/'));
         //redirect('/');
     }
 }
