@@ -1,6 +1,6 @@
 /*
-SQLyog Ultimate v11.21 (64 bit)
-MySQL - 5.6.31 : Database - merapiadventurejogja
+SQLyog Ultimate v11.2 (64 bit)
+MySQL - 10.1.25-MariaDB : Database - merapiadventurejogja
 *********************************************************************
 */
 
@@ -40,7 +40,7 @@ DROP TABLE IF EXISTS `m_promo`;
 CREATE TABLE `m_promo` (
   `id_promo` int(11) NOT NULL AUTO_INCREMENT,
   `nama_promo` varchar(50) NOT NULL,
-  `isi_promo` varchar(100) NOT NULL,
+  `isi_promo` varchar(500) NOT NULL,
   `harga_promo` varchar(25) NOT NULL,
   `level_promo` int(1) NOT NULL,
   PRIMARY KEY (`id_promo`)
@@ -48,7 +48,7 @@ CREATE TABLE `m_promo` (
 
 /*Data for the table `m_promo` */
 
-insert  into `m_promo`(`id_promo`,`nama_promo`,`isi_promo`,`harga_promo`,`level_promo`) values (1,'Promo Satu','isi','900',0),(2,'Promo Dua','dafdsf','900',0),(3,'Promo Mahal','isi','900',0),(4,'Promo Spesial','satu, dua, tiga','100',1);
+insert  into `m_promo`(`id_promo`,`nama_promo`,`isi_promo`,`harga_promo`,`level_promo`) values (1,'SHORT ROUTE','Start basecamp/hotel,\r\nMuseum sisa hartaku,\r\nBatu wajah/alien,\r\nBunker Kaliadem,\r\nPasir Panas,\r\nTrek basah Kalikuning \r\n( durasi 2 jam )','350',0),(2,'MEDIUM ROUTE','Start basecamp/hotel,\r\nMuseum sisa hartaku,\r\nBatu wajah/alien,\r\nBunker Kaliadem,\r\nPasir Panas,\r\nPetilasan Mbah Marijan,\r\nTrek basah Kalikuning \r\n( durasi 2 jam )','450',0),(3,'LONG ROUTE',' Start basecamp/hotel,\r\n Museum sisa hartaku,\r\n Makam Mbah Marijan,\r\n Batu wajah/alien,\r\n Bunker Kaliadem,\r\n Pasir Panas,\r\n Petilasan Mbah Marijan,\r\n Trek basah Kalikuning \r\n( durasi 3 jam )','550',0),(4,'SUNRISE ','Start dari basecamp/hotel,\r\n Coffe and Tea,\r\n Bunker Kaliadem,\r\n Pasir panas,\r\n Batu wajah/batu alien,\r\n Museum sisa hartaku,\r\n Trek basah Kalikuning \r\n( berangkat pukul 04.30 WIB)','400',1);
 
 /*Table structure for table `m_users` */
 

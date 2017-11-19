@@ -186,45 +186,87 @@ antavaya tour travel  ">
             <div class="container">
                 <div class="row">
                     <div class="row db-padding-btm db-attached">
-                    <?php foreach($m_promo as $b){ ?>
+                                
                         <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                            <div class="db-wrapper">
-                                <div class="db-pricing-eleven db-bk-color-one">
-                                    <div class="price">
-                                        <low><?php print_r($b['harga_promo'])?></low>rb
+                        <div class="db-wrapper">
+                            <div class="db-pricing-eleven db-bk-color-one">
+                                <div class="price">
+                                    <low><?php print_r($m_promo[0]['harga_promo']); ?></low>rb
                                         <small>per jeep</small>
-                                    </div>
-                                    <div class="type">
-                                        <?php print_r($b['nama_promo'])?>
-                                    </div>
-                                    <ul>
-                                        <?php print_r($b['isi_promo'])?>
-                                    </ul>
-                                 
                                 </div>
-                            </div>
-                        </div>
-                    <?php } ?>
-                    <?php foreach($m_promo_special as $s){ ?>
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                            <div class="db-wrapper">
-                                <div class="db-pricing-eleven db-bk-color-two popular">
-                                    <div class="price">
-                                        <low><?php print_r($s['harga_promo'])?></low>rb
-                                        <small>per jeep</small>
-                                    </div>
-                                    <div class="type">
-                                        <?php print_r($b['nama_promo'])?>
-                                    </div>
-                                    <ul>
-                                        <?php print_r($s['isi_promo'])?>
-                                    </ul>
+                                <div class="type">
+                                <?php print_r($m_promo[0]['nama_promo']); ?>
+                                </div>
+                                <ul>
 
-                                </div>
+                                   <?php print_r($m_promo[0]['isi_promo']); ?>
+                                    
+                                </ul>
+                                
                             </div>
                         </div>
-                    <?php } ?>
                     </div>
+
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                            <div class="db-wrapper">
+                        <div class="db-pricing-eleven db-bk-color-three">
+                            <div class="price">
+                                <low><?php print_r($m_promo[1]['harga_promo']); ?></low>rb
+                                <small>per jeep</small>
+                            </div>
+                            <div class="type">
+                            <?php print_r($m_promo[1]['nama_promo']); ?>
+                            </div>
+                            <ul>
+                                <?php print_r($m_promo[1]['isi_promo']); ?>
+                              
+                               
+                            </ul>
+                            
+                        </div>
+                                </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                        <div class="db-wrapper">
+                    <div class="db-pricing-eleven db-bk-color-two popular">
+                        <div class="price">
+                            <low><?php print_r($m_promo[2]['harga_promo']); ?></low>rb
+                            <small>per jeep</small>
+                        </div>
+                        <div class="type">
+                        <?php print_r($m_promo[2]['nama_promo']); ?>
+                        </div>
+                        <ul>
+                              <?php print_r($m_promo[2]['isi_promo']); ?>
+                        </ul>
+                        
+                    </div>
+                            </div>
+                </div>
+
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                            <div class="db-wrapper">
+                        <div class="db-pricing-eleven db-bk-color-six">
+                            <div class="price">
+                                <low><?php print_r($m_promo_special[0]['harga_promo']); ?></low>rb
+                                <small>per jeep</small>
+                            </div>
+                            <div class="type">
+                            <?php print_r($m_promo_special[0]['nama_promo']); ?>
+                            </div>
+                            <ul>
+
+                                <?php print_r($m_promo_special[0]['isi_promo']); ?>
+                        
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+
+
                     <ul class="timeline">
                         <li>
                             <div class="timeline-badge"><i class="fa fa-usd" aria-hidden="true"></i></div>
