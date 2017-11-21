@@ -54,6 +54,7 @@ antavaya tour travel  ">
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
 <body oncontextmenu="return false;">
     <!-- Navigation
     ==========================================-->
@@ -317,21 +318,20 @@ antavaya tour travel  ">
     ==========================================-->
     <section id="mal-gall">
         <div class="container">
+        <h2>Gallery</h2>
             <div class="row">
-            <h2>Gallery</h2>
-                <div class="gallery">
-                    <figure>
-                <?php foreach($m_photo_bawah as $d){ ?>
-                        
-                        <img src="<?php echo site_url('images/'.$d['file_photo'].'');?>" style="border:0; width:250px;"  alt="" />
-                        <figcaption><?php echo $d['nama_photo']; ?> <small><?php echo $d['desc_photo']; ?></small></figcaption>
-                    </figure>
-                <?php } ?>
+            
+                
+           <div class="gallery">
+            <?php foreach($m_photo_bawah as $d){ ?>
+		            <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="<?php echo site_url('images/'.$d['file_photo'].'');?>" /></div>
+             <?php } ?>
                 </div>
             </div>
+            
             <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GggsFOVi4lE"  frameborder="0" gesture="media" allowfullscreen></iframe>
-</div>
+        </div>
         </div>
     </section>
 
@@ -459,11 +459,15 @@ antavaya tour travel  ">
         <strong>Merapi Adventure Jogja</strong><br>
         Jalan Kaliurang Km.23 , 4 Sleman, Yogyakarta<br>
         Indonesia<br>
-        <abbr title="Phone">Phone :</abbr> 0878-3999-8000 </br>
-        <abbr title="Phone">Phone:</abbr> 0812-8464-3000 </br>
-        <abbr title="Phone">Master:</abbr> 0896-7000-3660 </br>
         <strong>Marketing</strong><br>
         <strong>Mrs. Waljinem</strong><br>
+        <abbr title="Phone">Phone :</abbr> 0859-2748-9531 </br>
+        <strong>Mr. Ruhimin</strong><br>
+        <abbr title="Phone">Phone:</abbr>  0878-3999-8000 </br>
+        <strong>Mrs. Mur</strong><br>
+        <abbr title="Phone">Phone:</abbr> 0812-8464-3000 </br>
+        
+        
         </address>
                     </div>
                 </div>
@@ -570,7 +574,7 @@ popup.init()
         </symbol>
     </svg>
 </body>
-<script>
+ <script>
     document.onkeydown = function(e) {
     if(event.keyCode == 123) {
     return false;
@@ -586,6 +590,6 @@ popup.init()
     }
     }
     
-</script>
+</script> 
 
 </html>
