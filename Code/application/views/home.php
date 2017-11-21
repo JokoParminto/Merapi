@@ -94,7 +94,7 @@ antavaya tour travel  ">
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-md-4 col-md-offset-4"> <img src="<?php echo site_url('resources/aio/img/merapi.jpg');?>" style="width:75px; height=75px;" class="img-responsive d-block m-x-auto" alt=""> </div>
+                        <div class="col-md-4 col-md-offset-4"> <img src="<?php echo site_url('resources/aio/img/merapi.jpg');?>" style="width:75px; height=75px;" class="img-responsive d-block m-x-auto" alt="merapiadventure, merapi jogja, merapi lava tour"> </div>
 
                     </div>
                 </div>
@@ -162,7 +162,7 @@ antavaya tour travel  ">
                 <div id="team" class="owl-carousel owl-theme row">
                 <?php foreach($m_photo_atas as $e){ ?>
                         <div class="item">
-                            <div class="thumbnail"> <img src="<?php echo site_url('images/'.$e['file_photo'].'');?>" alt="..." class="img-responsive team-img">
+                            <div class="thumbnail"> <img src="<?php echo site_url('images/'.$e['file_photo'].'');?>" alt="merapi jogja, merapi jeep tour" class="img-responsive team-img">
                                 <div class="caption">
                                     <h3 class="abt-hd"><?php echo $e['nama_photo']; ?></h3>
                                     <p class="abt-scrl"><?php echo $e['desc_photo']; ?></p>
@@ -318,20 +318,38 @@ antavaya tour travel  ">
     ==========================================-->
     <section id="mal-gall">
         <div class="container">
-        <h2>Gallery</h2>
-            <div class="row">
-            
-                
-           <div class="gallery">
+          <div class="row">
+            <h2>Gallery</h2></br>
             <?php foreach($m_photo_bawah as $d){ ?>
-		            <div class="col-md-3 col-sm-4 col-xs-6"><img class="img-responsive" src="<?php echo site_url('images/'.$d['file_photo'].'');?>" /></div>
-             <?php } ?>
-                </div>
-            </div>
+            <div class="row">
+                    <div class="col-lg-3 col-sm-4 col-6"><a href="#mal-gall" title="Image 1">
+                        <img src="<?php echo site_url('images/'.$d['file_photo'].'');?>" class="thumbnail img-responsive"></a></div>
+                    </div>
+            <?php } ?> 
             
             <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GggsFOVi4lE"  frameborder="0" gesture="media" allowfullscreen></iframe>
-        </div>
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GggsFOVi4lE"  frameborder="0" gesture="media" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                </div>
+                </div>
+                <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                        <h3 class="modal-title">Heading</h3>
+                    </div>
+                    <div class="modal-body">
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                       
+        </div> 
         </div>
     </section>
 
@@ -405,19 +423,19 @@ antavaya tour travel  ">
                             </div>
                             <!-- Bottom Carousel Indicators -->
                             <ol class="carousel-indicators">
-                                <li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive " src="<?php echo site_url('resources/aio/img/user-profile/1.jpg');?>" alt="">
+                                <li data-target="#quote-carousel" data-slide-to="0" class="active"><img class="img-responsive " src="<?php echo site_url('resources/aio/img/user-profile/1.jpg');?>" alt="merapiadventure, merapi jogja">
                                     <p class="usr-na">Wahyu Purnamasari</p>
                                 </li>
-                                <li data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive" src="<?php echo site_url('resources/aio/img/user-profile/2.jpg');?>" alt="">
+                                <li data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive" src="<?php echo site_url('resources/aio/img/user-profile/2.jpg');?>" alt="merapiadventure, merapi jogja">
                                     <p class="usr-na">Nanda Ferma</p>
                                 </li>
-                                <li data-target="#quote-carousel" data-slide-to="2"><img class="img-responsive" src="<?php echo site_url('resources/aio/img/user-profile/3.jpg');?>" alt="">
+                                <li data-target="#quote-carousel" data-slide-to="2"><img class="img-responsive" src="<?php echo site_url('resources/aio/img/user-profile/3.jpg');?>" alt="merapiadventure, merapi jogja">
                                     <p class="usr-na">Agri Wanodya</p>
                                 </li>
-                                <li data-target="#quote-carousel" data-slide-to="3"><img class="img-responsive" src="<?php echo site_url('resources/aio/img/user-profile/4.jpg');?>" alt="">
+                                <li data-target="#quote-carousel" data-slide-to="3"><img class="img-responsive" src="<?php echo site_url('resources/aio/img/user-profile/4.jpg');?>" alt="merapi lava tour">
                                     <p class="usr-na">Syardi B.H</p>
                                 </li>
-                                <li data-target="#quote-carousel" data-slide-to="4"><img class="img-responsive" src="<?php echo site_url('resources/aio/img/user-profile/5.jpg');?>" alt="">
+                                <li data-target="#quote-carousel" data-slide-to="4"><img class="img-responsive" src="<?php echo site_url('resources/aio/img/user-profile/5.jpg');?>" alt="merapi jeep">
                                     <p class="usr-na">Joko P</p>
                                 </li>
                             </ol>
@@ -460,11 +478,11 @@ antavaya tour travel  ">
         Jalan Kaliurang Km.23 , 4 Sleman, Yogyakarta<br>
         Indonesia<br>
         <strong>Marketing</strong><br>
-        <strong>Mrs. Waljinem</strong><br>
+        <strong>Mbak Wal</strong><br>
         <abbr title="Phone">Phone :</abbr> 0859-2748-9531 </br>
-        <strong>Mr. Ruhimin</strong><br>
+        <strong>Pak Rukimin</strong><br>
         <abbr title="Phone">Phone:</abbr>  0878-3999-8000 </br>
-        <strong>Mrs. Mur</strong><br>
+        <strong>Mas Mur</strong><br>
         <abbr title="Phone">Phone:</abbr> 0812-8464-3000 </br>
         
         
@@ -526,53 +544,17 @@ antavaya tour travel  ">
     </script>
 
 <script>
-    popup = {
-  init: function(){
-    $('figure').click(function(){
-      popup.open($(this));
-    });
-    
-    $(document).on('click', '.popup img', function(){
-      return false;
-    }).on('click', '.popup', function(){
-      popup.close();
-    })
-  },
-  open: function($figure) {
-    $('.gallery').addClass('pop');
-    $popup = $('<div class="popup" />').appendTo($('body'));
-    $fig = $figure.clone().appendTo($('.popup'));
-    $bg = $('<div class="bg" />').appendTo($('.popup'));
-    $close = $('<div class="close"><svg><use xlink:href="#close"></use></svg></div>').appendTo($fig);
-    $shadow = $('<div class="shadow" />').appendTo($fig);
-    src = $('img', $fig).attr('src');
-    $shadow.css({backgroundImage: 'url(' + src + ')'});
-    $bg.css({backgroundImage: 'url(' + src + ')'});
-    setTimeout(function(){
-      $('.popup').addClass('pop');
-    }, 10);
-  },
-  close: function(){
-    $('.gallery, .popup').removeClass('pop');
-    setTimeout(function(){
-      $('.popup').remove()
-    }, 100);
-  }
-}
-
-popup.init()
+    $('.thumbnail').click(function(){
+  	$('.modal-body').empty();
+  	var title = $(this).parent('a').attr("title");
+  	$('.modal-title').html(title);
+  	$($(this).parents('div').html()).appendTo('.modal-body');
+  	$('#myModal').modal({show:true});
+});
 
 </script>
 
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;">
-        <symbol id="close" viewBox="0 0 18 18">
-            <path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M9,0.493C4.302,0.493,0.493,4.302,0.493,9S4.302,17.507,9,17.507
-	        		S17.507,13.698,17.507,9S13.698,0.493,9,0.493z M12.491,11.491c0.292,0.296,0.292,0.773,0,1.068c-0.293,0.295-0.767,0.295-1.059,0
-	        		l-2.435-2.457L6.564,12.56c-0.292,0.295-0.766,0.295-1.058,0c-0.292-0.295-0.292-0.772,0-1.068L7.94,9.035L5.435,6.507
-	        		c-0.292-0.295-0.292-0.773,0-1.068c0.293-0.295,0.766-0.295,1.059,0l2.504,2.528l2.505-2.528c0.292-0.295,0.767-0.295,1.059,0
-	        		s0.292,0.773,0,1.068l-2.505,2.528L12.491,11.491z"/>
-        </symbol>
-    </svg>
+   
 </body>
  <script>
     document.onkeydown = function(e) {
