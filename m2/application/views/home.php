@@ -53,8 +53,8 @@ antavaya tour travel  ">
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
-<!-- <body oncontextmenu="return false;"> -->
+
+<body oncontextmenu="return false;">
     <!-- Navigation
     ==========================================-->
     <nav id="mal-menu" class="navbar navbar-default navbar-fixed-top">
@@ -182,7 +182,7 @@ antavaya tour travel  ">
 <!-- 
 ========================================================================================================================= -->
 
-            <div class="row db-padding-btm db-attached">
+            <div class="row db-padding-btm db-attached"  >
                  <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                         <div class="db-wrapper">
                         <div class="db-pricing-eleven db-bk-color-two popular">
@@ -190,7 +190,7 @@ antavaya tour travel  ">
                         <low><?php print_r($m_promo[3]['harga_promo']); ?></low>rb
                         <small>per jeep</small>
                     </div>
-                    <div class="type">
+                    <div class="type" style="padding-left: 50px 0px 0px 0px;">
                     <?php print_r($m_promo[3]['nama_promo']); ?>
                     </div>
                     <ul>
@@ -203,7 +203,7 @@ antavaya tour travel  ">
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                         <div class="db-wrapper">
                         <div class="db-pricing-eleven db-bk-color-three">
-                        <div class="price">
+                        <div class="price"  style="padding-left: 50px 0px 0px 0px;">
                         <low><?php print_r($m_promo_special[0]['harga_promo']); ?></low>rb
                         <small>per jeep</small>
                     </div>
@@ -553,7 +553,7 @@ antavaya tour travel  ">
 
    
 </body>
- <!-- <script>
+ <script>
     document.onkeydown = function(e) {
     if(event.keyCode == 123) {
     return false;
@@ -569,6 +569,6 @@ antavaya tour travel  ">
     }
     }
     
-</script>  -->
+</script> 
 
 </html>
