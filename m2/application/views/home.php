@@ -53,8 +53,8 @@ antavaya tour travel  ">
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-
-<body oncontextmenu="return false;">
+<body>
+<!-- <body oncontextmenu="return false;"> -->
     <!-- Navigation
     ==========================================-->
     <nav id="mal-menu" class="navbar navbar-default navbar-fixed-top">
@@ -69,10 +69,10 @@ antavaya tour travel  ">
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#mal-home" class="page-scroll">Home</a></li>
-                    <li><a href="#mal-about" class="page-scroll">About</a></li>
                     <li><a href="#mal-book" class="page-scroll">Paket Wisata</a></li>
-                    <!-- <li><a href="#tf-services" class="page-scroll">Services</a></li>-->
                     <li><a href="#mal-gall" class="page-scroll">Gallery</a></li>
+                    <li><a href="#mal-about" class="page-scroll">About</a></li>
+                    <!-- <li><a href="#tf-services" class="page-scroll">Services</a></li>-->
                     <li><a href="#mal-contact" class="page-scroll">Location</a></li>
                 </ul>
             </div>
@@ -99,85 +99,14 @@ antavaya tour travel  ">
                 </div>
                 <h1> Merapi Adventure Jogja</h1>
                 <p class="lead">Jeep Tour </p>
-                <a href="#mal-about" class="fa fa-angle-down page-scroll"></a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Follow Us Page
-    ==========================================-->
-    <section id="mal-Follow" class="text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="col-md-4"> </div>
-                    <div class="col-md-4">
-                        <h3>Follow us</h3>
-                        <ul class="list-inline">
-                            <li class="list-group-item">
-                                <a href="#"> <i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#"> <i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#"> <i class="fa fa-instagram"></i></a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="#"> <i class="fa fa-youtube"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4"> </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Us Page
-    ==========================================-->
-    <section id="mal-about" class="text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="about-text">
-                        <div class="section-title">
-                            <h4 class="wt">about us</h4>
-                        </div>
-                        <p class="intro">Wisata Bersejarah Lava Tour Merapi merupakan wisata alam yang berada di Provinsi Yogyakarta, wisata ini merupakan sebuah perjalanan menggunakan mobil Willys yaitu mobil jeep yang dipakai saat perang dunia ke II. Dengan mobil jeep
-                            ini kita akan menyusuri kawasan yang terdampak erupsi gunung Merapi pada tahun 2010, yang tentunya akan memacu adrenalin kita karena akan melawati jalan yang terjal maupun curam. Disepanjang perjalanan kita akan disuguhi pemandangan
-                            alam yang indah dan melewati makam masal korban erupsi Merapi tahun 2010 di Dusun Tangkisan, Tugu ambruk di di Dusun Petung, jalur Kali Opak dan Kali Gendol yang menjadi jalur utama lava panas Gunung Merapi..</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Scroll Page
-    ==========================================-->
-    <section id="mal-scrll" class="text-center">
-        <div class="overlay">
-            <div class="container">
-                <div id="team" class="owl-carousel owl-theme row">
-                <?php foreach($m_photo_atas as $e){ ?>
-                        <div class="item">
-                            <div class="thumbnail"> <img src="<?php echo site_url('images/'.$e['file_photo'].'');?>" alt="merapi jogja, merapi jeep tour" class="img-responsive team-img">
-                                <div class="caption">
-                                    <h3 class="abt-hd"><?php echo $e['nama_photo']; ?></h3>
-                                    <p class="abt-scrl"><?php echo $e['desc_photo']; ?></p>
-                                    <div class="triangle-bottomright"></div>
-                                </div>
-                            </div>
-                        </div>
-                    <?php } ?>
-                </div>
+                <a href="#mal-book" class="fa fa-angle-down page-scroll"></a>
             </div>
         </div>
     </section>
 
     <!-- Booking Page
     ==========================================-->
-    <section id="mal-book" class="text-center" style="background: url(<?php echo site_url('resources/aio/img/03.jpg');?>);
+    <section id="mal-book" class="text-center" style="background: url(<?php echo site_url('resources/aio/img/06.jpeg');?>);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -188,142 +117,165 @@ antavaya tour travel  ">
                 <div class="row">
                     <div class="row db-padding-btm db-attached">
                                 
-                        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                      
+                  <div class="row db-padding-btm db-attached">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <div class="db-wrapper">
+                    <div class="db-pricing-eleven db-bk-color-one">
+                    <div class="price">
+                    <low><?php print_r($m_promo[0]['harga_promo']); ?></low>rb
+                        <small>per jeep</small>
+                </div>
+                <div class="type">
+                <?php print_r($m_promo[0]['nama_promo']); ?>
+                </div>
+                <ul>
+
+                   <?php print_r($m_promo[0]['isi_promo']); ?>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                         <div class="db-wrapper">
-                            <div class="db-pricing-eleven db-bk-color-one">
-                                <div class="price">
-                                    <low><?php print_r($m_promo[0]['harga_promo']); ?></low>rb
-                                        <small>per jeep</small>
-                                </div>
-                                <div class="type">
-                                <?php print_r($m_promo[0]['nama_promo']); ?>
-                                </div>
-                                <ul>
-
-                                   <?php print_r($m_promo[0]['isi_promo']); ?>
-                                    
-                                </ul>
-                                
-                            </div>
-                        </div>
+                        <div class="db-pricing-eleven db-bk-color-two popular">
+                        <div class="price">
+                        <low><?php print_r($m_promo[1]['harga_promo']); ?></low>rb
+                        <small>per jeep</small>
                     </div>
+                    <div class="type">
+                    <?php print_r($m_promo[1]['nama_promo']); ?>
+                    </div>
+                    <ul>
+                        <?php print_r($m_promo[1]['isi_promo']); ?>
+                      
+                       
+                    </ul>
+                    
+                </div>
+                        </div>
+            </div>
+                   
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                 <div class="db-wrapper">
+                <div class="db-pricing-eleven db-bk-color-three">
+                <div class="price">
+                <low><?php print_r($m_promo[2]['harga_promo']); ?></low>rb
+                <small>per jeep</small>
+                </div>
+                <div class="type">
+                <?php print_r($m_promo[2]['nama_promo']); ?>
+                </div>
+                <ul>
+                      <?php print_r($m_promo[2]['isi_promo']); ?>
+                </ul>
+                
+            </div>
+                    </div>
+        </div>
+    </div>
 
-                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                            <div class="db-wrapper">
+
+<!-- 
+========================================================================================================================= -->
+
+            <div class="row db-padding-btm db-attached">
+                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="db-wrapper">
+                        <div class="db-pricing-eleven db-bk-color-two popular">
+                        <div class="price">
+                        <low><?php print_r($m_promo[3]['harga_promo']); ?></low>rb
+                        <small>per jeep</small>
+                    </div>
+                    <div class="type">
+                    <?php print_r($m_promo[3]['nama_promo']); ?>
+                    </div>
+                    <ul>
+                        <?php print_r($m_promo[3]['isi_promo']); ?>
+                    </ul>
+                    
+                </div>
+                        </div>
+            </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="db-wrapper">
                         <div class="db-pricing-eleven db-bk-color-three">
-                            <div class="price">
-                                <low><?php print_r($m_promo[1]['harga_promo']); ?></low>rb
-                                <small>per jeep</small>
-                            </div>
-                            <div class="type">
-                            <?php print_r($m_promo[1]['nama_promo']); ?>
-                            </div>
-                            <ul>
-                                <?php print_r($m_promo[1]['isi_promo']); ?>
-                              
-                               
-                            </ul>
-                            
-                        </div>
-                                </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                        <div class="db-wrapper">
-                    <div class="db-pricing-eleven db-bk-color-two popular">
                         <div class="price">
-                            <low><?php print_r($m_promo[2]['harga_promo']); ?></low>rb
-                            <small>per jeep</small>
-                        </div>
-                        <div class="type">
-                        <?php print_r($m_promo[2]['nama_promo']); ?>
-                        </div>
-                        <ul>
-                              <?php print_r($m_promo[2]['isi_promo']); ?>
-                        </ul>
-                        
+                        <low><?php print_r($m_promo_special[0]['harga_promo']); ?></low>rb
+                        <small>per jeep</small>
                     </div>
-                            </div>
+                    <div class="type">
+                    <?php print_r($m_promo_special[0]['nama_promo']); ?>
+                    </div>
+                    <ul>
+
+                        <?php print_r($m_promo_special[0]['isi_promo']); ?>
+                
+                    </ul>
                 </div>
-
-                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                        <div class="db-wrapper">
-                    <div class="db-pricing-eleven db-bk-color-two popular">
-                        <div class="price">
-                            <low><?php print_r($m_promo[3]['harga_promo']); ?></low>rb
-                            <small>per jeep</small>
-                        </div>
-                        <div class="type">
-                        <?php print_r($m_promo[3]['nama_promo']); ?>
-                        </div>
-                        <ul>
-                              <?php print_r($m_promo[3]['isi_promo']); ?>
-                        </ul>
-                        
-                    </div>
-                            </div>
                 </div>
+            </div>
+            </div>
+<!-- ===================================================================================================================== -->
 
-                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-                            <div class="db-wrapper">
-                        <div class="db-pricing-eleven db-bk-color-six">
-                            <div class="price">
-                                <low><?php print_r($m_promo_special[0]['harga_promo']); ?></low>rb
-                                <small>per jeep</small>
-                            </div>
-                            <div class="type">
-                            <?php print_r($m_promo_special[0]['nama_promo']); ?>
-                            </div>
-                            <ul>
-
-                                <?php print_r($m_promo_special[0]['isi_promo']); ?>
-                        
-                            </ul>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-
-
-
-                    <ul class="timeline">
-                        <li>
-                            <div class="timeline-badge"><i class="fa fa-usd" aria-hidden="true"></i></div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4 class="timeline-title">Harga diatas adalah biaya per jeep & 1 jeep berisi 4 orang</h4>
-
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="timeline-inverted">
-                            <div class="timeline-badge warning"><i class="fa fa-thumbs-up" aria-hidden="true"></i></div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4 class="timeline-title">Penumpang jeep sudah diasuransikan & free masker</h4>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="timeline-badge danger"><i class="fa fa-home" aria-hidden="true"></i></div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4 class="timeline-title">Penjemputan tamu di hotel, hanya kawasan Kaliurang</h4>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="timeline-inverted">
-                            <div class="timeline-badge success"><i class="fa fa-thumb-tack" aria-hidden="true"></i></div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4 class="timeline-title">Tarif khusus untuk liburan lebaran dan tahun baru</h4>
-                                </div>
-
-                            </div>
-                        </li>
+<div class="row">
+    <div class="col-md-4 text-center">
+        <div class="box">
+            <div class="box-content">
+                <h1 class="tag-title">Fasilitas</h1>
+                <hr />
+                    <h5 class="timeline-title">Tiket Masuk</h5>
+                     <br />
+                    <h5 class="timeline-title">Parkir Jeep</h5>
+                    <br />
+                    <h5 class="timeline-title">Free Parkir</h5>
+                    <br />
+                    <h5 class="timeline-title">Asuransi</h5>
+                    <br />
+                    <h5 class="timeline-title">Pemandu</h5>
+                    <br />
+                    <h5 class="timeline-title">Toilet</h5>
+                    <br />
+                    <h5 class="timeline-title">Mushola</h5>
+                    <br />
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 text-center">
+        <div class="box">
+            <div class="box-content">
+                <h1 class="tag-title">Wisata Baru</h1>
+                <hr />
+                <h5 class="timeline-title">Stonehenge</h5>
+                    <br />
+                    <h5 class="timeline-title">The Lost World Castle</h5>
+                    <br />
+                
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 text-center">
+        <div class="box">
+            <div class="box-content">
+                <h1 class="tag-title">Ketentuan</h1>
+                <hr />
+                    <h5 class="timeline-title">Harga diatas adalah biaya per jeep & 1 jeep berisi 4 orang</h5>
+                <br />
+                    <h5 class="timeline-title">Penumpang jeep sudah diasuransikan & free masker</h5>
+                    <br />
+                    <h5 class="timeline-title">Penjemputan tamu di hotel, hanya kawasan Kaliurang</h5>
+                    <br />
+                    <h5 class="timeline-title">Tarif khusus untuk liburan lebaran dan tahun baru</h5>
+            </div>
+        </div>
+    </div>
+</div>           
+</div>
+<!-- ============================================================================================================================= -->
+                   
                 </div>
                 
             </div>
@@ -331,7 +283,7 @@ antavaya tour travel  ">
         </div>
     </section>
 
-    <!-- Gallery Page
+     <!-- Gallery Page
     ==========================================-->
     <section id="mal-gall">
         <div class="container">
@@ -339,11 +291,13 @@ antavaya tour travel  ">
             <h2>Gallery</h2></br>
             <?php foreach($m_photo_bawah as $d){ ?>
             <div class="row">
-                    <div class="col-lg-3 col-sm-4 col-6"><a href="#mal-gall" title="Image 1">
-                        <img src="<?php echo site_url('images/'.$d['file_photo'].'');?>" class="thumbnail img-responsive"></a></div>
+                    <div class="col-lg-3 col-sm-4 col-6">
+                    <div class="thumb"> <a> <img src="<?php echo site_url('images/'.$d['file_photo'].'');?>" class="thumbnail img-responsive"></a>
+                    </div>
+                    </div>
                     </div>
             <?php } ?> 
-            
+            </div>
             <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GggsFOVi4lE"  frameborder="0" gesture="media" allowfullscreen></iframe>
                     </div>
@@ -369,8 +323,7 @@ antavaya tour travel  ">
         </div> 
         </div>
     </section>
-
-    <!-- Testimonials Section
+     <!-- Testimonials Section
     ==========================================-->
     <section id="mal-testimonials" style="background: url(<?php echo site_url('resources/aio/img/05.jpg');?>);
 	background-size: cover;
@@ -465,6 +418,53 @@ antavaya tour travel  ">
         </div>
     </section>
 
+
+    <!-- About Us Page
+    ==========================================-->
+    <section id="mal-about" class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="about-text">
+                        <div class="section-title">
+                            <h4 class="wt">about us</h4>
+                        </div>
+                        <p class="intro">Wisata Bersejarah Lava Tour Merapi merupakan wisata alam yang berada di Provinsi Yogyakarta, wisata ini merupakan sebuah perjalanan menggunakan mobil Willys yaitu mobil jeep yang dipakai saat perang dunia ke II. Dengan mobil jeep
+                            ini kita akan menyusuri kawasan yang terdampak erupsi gunung Merapi pada tahun 2010, yang tentunya akan memacu adrenalin kita karena akan melawati jalan yang terjal maupun curam. Disepanjang perjalanan kita akan disuguhi pemandangan
+                            alam yang indah dan melewati makam masal korban erupsi Merapi tahun 2010 di Dusun Tangkisan, Tugu ambruk di di Dusun Petung, jalur Kali Opak dan Kali Gendol yang menjadi jalur utama lava panas Gunung Merapi..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll Page
+    ==========================================-->
+    <section id="mal-scrll" class="text-center">
+        <div class="overlay">
+            <div class="container">
+                <div id="team" class="owl-carousel owl-theme row">
+                <?php foreach($m_photo_atas as $e){ ?>
+                        <div class="item">
+                            <div class="thumbnail"> <img src="<?php echo site_url('images/'.$e['file_photo'].'');?>" alt="merapi jogja, merapi jeep tour" class="img-responsive team-img">
+                                <div class="caption">
+                                    <h3 class="abt-hd"><?php echo $e['nama_photo']; ?></h3>
+                                    <p class="abt-scrl"><?php echo $e['desc_photo']; ?></p>
+                                    <div class="triangle-bottomright"></div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php } ?>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    
+   
+
+   
     <!-- Services Section
     ==========================================-->
 
@@ -514,25 +514,6 @@ antavaya tour travel  ">
     <!-- footer  Section
     ==========================================-->
 
-    <section id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 fnav text-center">
-                    <ul class="list-inline">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                    </ul>
-                </div>
-                <div class=" col-md-12  fnav text-center">
-
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -560,7 +541,7 @@ antavaya tour travel  ">
     </script>
 
 <script>
-    $('.thumbnail').click(function(){
+    $('.thumb').click(function(){
   	$('.modal-body').empty();
   	var title = $(this).parent('a').attr("title");
   	$('.modal-title').html(title);
@@ -572,7 +553,7 @@ antavaya tour travel  ">
 
    
 </body>
- <script>
+ <!-- <script>
     document.onkeydown = function(e) {
     if(event.keyCode == 123) {
     return false;
@@ -588,6 +569,6 @@ antavaya tour travel  ">
     }
     }
     
-</script> 
+</script>  -->
 
 </html>
