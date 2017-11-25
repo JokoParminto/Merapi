@@ -241,6 +241,9 @@ antavaya tour travel  ">
                     <br />
                     <h5 class="timeline-title">Mushola</h5>
                     <br />
+                    <strong>Marketing :</strong><br>
+                    <abbr title="Phone">Phone :</abbr> 0859-2748-9531 </br>
+                    <strong>Mbak Wal</strong><br>
             </div>
         </div>
     </div>
@@ -286,43 +289,39 @@ antavaya tour travel  ">
      <!-- Gallery Page
     ==========================================-->
     <section id="mal-gall">
-        <div class="container">
-          <div class="row">
-            <h2>Gallery</h2></br>
-            <?php foreach($m_photo_bawah as $d){ ?>
-            <div class="row">
-                    <div class="col-lg-3 col-sm-4 col-6">
-                    <div class="thumb"> <a> <img src="<?php echo site_url('images/'.$d['file_photo'].'');?>" class="thumbnail img-responsive"></a>
+    <div class="container">
+    <div class="row">
+                <div class="container gal-container">
+               <div> <h2> Gallery </h2></div>
+                <?php foreach($m_photo_bawah as $d){ ?>
+            <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+            <div class="boxi">
+                <a href="#" data-toggle="modal" data-target="#2">
+                <img src="<?php echo site_url('images/'.$d['file_photo'].'');?>">
+                </a>
+                <div class="modal fade" id="2" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <div class="modal-body">
+                        <img src="<?php echo site_url('images/'.$d['file_photo'].'');?>">
                     </div>
+                        
                     </div>
-                    </div>
-            <?php } ?> 
+                </div>
+                </div>
             </div>
+            <?php } ?>
+            
+            
+                    </div>
+                    </div>
             <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GggsFOVi4lE"  frameborder="0" gesture="media" allowfullscreen></iframe>
                     </div>
                 </div>
-
-                </div>
-                </div>
-                <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
-                <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">×</button>
-                        <h3 class="modal-title">Heading</h3>
-                    </div>
-                    <div class="modal-body">
-                        
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-                       
-        </div> 
-        </div>
     </section>
+    
      <!-- Testimonials Section
     ==========================================-->
     <section id="mal-testimonials" style="background: url(<?php echo site_url('resources/aio/img/05.jpg');?>);
@@ -460,11 +459,7 @@ antavaya tour travel  ">
         </div>
     </section>
 
-   
-    
-   
-
-   
+      
     <!-- Services Section
     ==========================================-->
 
@@ -492,7 +487,7 @@ antavaya tour travel  ">
                     <div class="col-md-6 text-center"> <i class="fa fa-5x fa-map-marker"></i>
                         <address>
         <strong>Merapi Adventure Jogja</strong><br>
-        Jalan Kaliurang Km.23 , 4 Sleman, Yogyakarta<br>
+        Jalan Kaliurang Km.23 , Ngipiksari 01/12 hargobinangun ,pakem,sleman jogja 55585, Yogyakarta<br>
         Indonesia<br>
         <strong>Marketing</strong><br>
         <strong>Mbak Wal</strong><br>
@@ -539,17 +534,11 @@ antavaya tour travel  ">
 
         gtag('config', 'UA-109740438-1');
     </script>
+<!-- 
+============================================================== -->
 
-<script>
-    $('.thumb').click(function(){
-  	$('.modal-body').empty();
-  	var title = $(this).parent('a').attr("title");
-  	$('.modal-title').html(title);
-  	$($(this).parents('div').html()).appendTo('.modal-body');
-  	$('#myModal').modal({show:true});
-});
+<!-- ===================================================================================== -->
 
-</script>
 
    
 </body>
