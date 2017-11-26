@@ -2957,7 +2957,7 @@ textarea {
 }
 
 
-/* 
+
 .box {
     background: rgb(71, 151, 144);
     transition: all 0.2s ease;
@@ -2991,8 +2991,8 @@ textarea {
 .box .box-content p {
     color: #eaedf0;
     text-transform: none;
-} */
-
+}
+/* 
 .gal-container {
     padding: 12px;
 }
@@ -3135,7 +3135,7 @@ textarea {
 }
 
 
-/* Footer Style */
+
 
 i.red {
     color: #BC0213;
@@ -3144,4 +3144,4 @@ i.red {
 .gal-container {
     padding-top: 75px;
     padding-bottom: 75px;
-}
+} */
