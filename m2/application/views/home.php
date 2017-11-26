@@ -5,10 +5,10 @@
     ================================================== -->
 <meta charset="utf-8">
 <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 <title>Merapi Adventure Jogja</title>
 <noscript><meta http-equiv="refresh" content="0; url=<?php echo site_url('home/jsoff');?>" /></noscript>
-<meta name="description" content="">
+<meta name="description" content="Merapi Adventure Jogja, Solusi traveling dengan menggunakan jeep mengelilingi lavatour merapi Yogyakarta">
 <meta name="keywords" content="travel and tour , tour n travel , tour dan travel , website tour and travel , 
 antavaya tour package , tour and travel packages , travel dan tour , tour travel terbaik , web tour travel , 
 antavaya tour travel , promo tour and travel , best tour travel , antavaya tour and travel , tour and travel terbaik , 
@@ -289,37 +289,34 @@ antavaya tour travel  ">
      <!-- Gallery Page
     ==========================================-->
     <section id="mal-gall">
-    <div class="container">
-    <div class="row">
+        <div class="container">
+            <div class="row">
                 <div class="container gal-container">
-               <div> <h2> Gallery </h2></div>
-                <?php foreach($m_photo_bawah as $d){ ?>
-            <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-            <div class="boxi">
-                <a href="#" data-toggle="modal" data-target="#2">
-                <img src="<?php echo site_url('images/'.$d['file_photo'].'');?>">
-                </a>
-                <div class="modal fade" id="2" tabindex="-1" role="dialog">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                    <div class="modal-body">
-                        <img src="<?php echo site_url('images/'.$d['file_photo'].'');?>">
+                    <div> <h2> Gallery </h2></div>
+                        <?php foreach($m_photo_bawah as $d){ ?>
+                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                            <div class="boxi">
+                                <a href="#" data-toggle="modal" data-target="#2">
+                                <img src="<?php echo site_url('images/'.$d['file_photo'].'');?>">
+                                </a>
+                                <div class="modal fade" id="2" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <div class="modal-body">
+                                                <img src="<?php echo site_url('images/'.$d['file_photo'].'');?>">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <?php } ?>   
                     </div>
                         
-                    </div>
-                </div>
                 </div>
             </div>
-            <?php } ?>
-            
-            
-                    </div>
-                    </div>
-            <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GggsFOVi4lE"  frameborder="0" gesture="media" allowfullscreen></iframe>
-                    </div>
-                </div>
+        </div>
     </section>
     
      <!-- Testimonials Section
