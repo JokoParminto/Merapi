@@ -53,8 +53,8 @@ antavaya tour travel  ">
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-
-<body oncontextmenu="return false;">
+<body>
+<!-- <body oncontextmenu="return false;"> -->
     <!-- Navigation
     ==========================================-->
     <nav id="mal-menu" class="navbar navbar-default navbar-fixed-top">
@@ -539,7 +539,7 @@ antavaya tour travel  ">
 
    
 </body>
- <script>
+ <!-- <script>
     document.onkeydown = function(e) {
     if(event.keyCode == 123) {
     return false;
@@ -555,6 +555,6 @@ antavaya tour travel  ">
     }
     }
     
-</script> 
+</script>  -->
 
 </html>
