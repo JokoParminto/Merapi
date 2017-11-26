@@ -5,10 +5,10 @@
     ================================================== -->
 <meta charset="utf-8">
 <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Merapi Adventure Jogja</title>
 <noscript><meta http-equiv="refresh" content="0; url=<?php echo site_url('home/jsoff');?>" /></noscript>
-<meta name="description" content="Merapi Adventure Jogja, Solusi traveling dengan menggunakan jeep mengelilingi lavatour merapi Yogyakarta">
+<meta name="description" content="">
 <meta name="keywords" content="travel and tour , tour n travel , tour dan travel , website tour and travel , 
 antavaya tour package , tour and travel packages , travel dan tour , tour travel terbaik , web tour travel , 
 antavaya tour travel , promo tour and travel , best tour travel , antavaya tour and travel , tour and travel terbaik , 
@@ -45,6 +45,7 @@ antavaya tour travel  ">
 <link rel="stylesheet" type="text/css" href="<?php echo site_url('resources/aio/css/responsive.css');?>">
 <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="<?php echo site_url('resources/aio/js/modernizr.custom.js');?>"></script>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -53,7 +54,7 @@ antavaya tour travel  ">
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+
 <!-- <body oncontextmenu="return false;"> -->
     <!-- Navigation
     ==========================================-->
@@ -69,10 +70,10 @@ antavaya tour travel  ">
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#mal-home" class="page-scroll">Home</a></li>
-                    <li><a href="#mal-book" class="page-scroll">Paket Wisata</a></li>
-                    <li><a href="#mal-gall" class="page-scroll">Gallery</a></li>
                     <li><a href="#mal-about" class="page-scroll">About</a></li>
+                    <li><a href="#mal-book" class="page-scroll">Paket Wisata</a></li>
                     <!-- <li><a href="#tf-services" class="page-scroll">Services</a></li>-->
+                    <li><a href="#mal-gall" class="page-scroll">Gallery</a></li>
                     <li><a href="#mal-contact" class="page-scroll">Location</a></li>
                 </ul>
             </div>
@@ -103,6 +104,10 @@ antavaya tour travel  ">
             </div>
         </div>
     </section>
+
+   
+
+   
 
     <!-- Booking Page
     ==========================================-->
@@ -221,10 +226,10 @@ antavaya tour travel  ">
             </div>
 <!-- ===================================================================================================================== -->
 
-<!-- <div class="row">
+<div class="row">
     <div class="col-md-4 text-center">
-        <div class="box">
-            <div class="box-content">
+        <div class="boxa">
+            <div class="boxa-content">
                 <h1 class="tag-title">Fasilitas</h1>
                 <hr />
                     <h5 class="timeline-title">Tiket Masuk</h5>
@@ -248,8 +253,8 @@ antavaya tour travel  ">
         </div>
     </div>
     <div class="col-md-4 text-center">
-        <div class="box">
-            <div class="box-content">
+        <div class="boxa">
+            <div class="boxa-content">
                 <h1 class="tag-title">Wisata Baru</h1>
                 <hr />
                 <h5 class="timeline-title">Stonehenge</h5>
@@ -261,7 +266,7 @@ antavaya tour travel  ">
         </div>
     </div>
     <div class="col-md-4 text-center">
-        <div class="box">
+        <div class="boxa">
             <div class="box-content">
                 <h1 class="tag-title">Ketentuan</h1>
                 <hr />
@@ -276,7 +281,7 @@ antavaya tour travel  ">
         </div>
     </div>
 </div>           
-</div> -->
+</div>
 <!-- ============================================================================================================================= -->
                    
                 </div>
@@ -285,41 +290,41 @@ antavaya tour travel  ">
         </div>
         </div>
     </section>
-
-     <!-- Gallery Page
+    <!-- Gallery Page
     ==========================================-->
     <section id="mal-gall">
-        <div class="container">
-            <div class="row">
-                <div class="container gal-container">
-                    <div> <h2> Gallery </h2></div>
-                        <?php foreach($m_photo_bawah as $d){ ?>
-                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-                            <div class="boxi">
-                                <a href="#" data-toggle="modal" data-target="#2">
-                                <img src="<?php echo site_url('images/'.$d['file_photo'].'');?>">
-                                </a>
-                                <div class="modal fade" id="2" tabindex="-1" role="dialog">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-                                            <div class="modal-body">
-                                                <img src="<?php echo site_url('images/'.$d['file_photo'].'');?>">
-                                            </div>
-                                        </div>
+    <div class="container">
+        <div class="row">
+            <div class="container gal-container">
+                <div> <h2> Gallery </h2></div>
+                    <?php foreach($m_photo_bawah as $d){ ?>
+                    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                        <div class="boxi">
+                            <a href="#" data-toggle="modal" data-target="#2">
+                            <img src="<?php echo site_url('images/'.$d['file_photo'].'');?>">
+                            </a>
+                            <div class="modal fade" id="2" tabindex="-1" role="dialog">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        
+                                            <img src="<?php echo site_url('images/'.$d['file_photo'].'');?>">
+                                        
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <?php } ?>   
                     </div>
-                        
+                    <?php } ?>   
                 </div>
+                    
             </div>
         </div>
-    </section>
-    
-     <!-- Testimonials Section
+    </div>
+</section>
+
+
+    <!-- Testimonials Section
     ==========================================-->
     <section id="mal-testimonials" style="background: url(<?php echo site_url('resources/aio/img/05.jpg');?>);
 	background-size: cover;
@@ -414,8 +419,9 @@ antavaya tour travel  ">
         </div>
     </section>
 
-
-    <!-- About Us Page
+    <!-- Services Section
+    ==========================================-->
+ <!-- About Us Page
     ==========================================-->
     <section id="mal-about" class="text-center">
         <div class="container">
@@ -456,11 +462,6 @@ antavaya tour travel  ">
         </div>
     </section>
 
-      
-    <!-- Services Section
-    ==========================================-->
-
-
     <!-- contct  Section
     ==========================================-->
     <section id="mal-contact" class="text-center" style="background: url(<?php echo site_url('resources/aio/img/04.jpg');?>);
@@ -483,17 +484,16 @@ antavaya tour travel  ">
                     </div>
                     <div class="col-md-6 text-center"> <i class="fa fa-5x fa-map-marker"></i>
                         <address>
-        <strong>Merapi Adventure Jogja</strong><br>
-        Jalan Kaliurang Km.23 , Ngipiksari 01/12 hargobinangun ,pakem,sleman jogja 55585, Yogyakarta<br>
-        Indonesia<br>
-        <strong>Marketing</strong><br>
-        <strong>Mbak Wal</strong><br>
-        <abbr title="Phone">Phone :</abbr> 0859-2748-9531 </br>
-        <strong>Pak Rukimin</strong><br>
-        <abbr title="Phone">Phone:</abbr>  0878-3999-8000 </br>
-        <strong>Mas Mur</strong><br>
-        <abbr title="Phone">Phone:</abbr> 0812-8464-3000 </br>
-        
+                        <strong>Merapi Adventure Jogja</strong><br>
+                        Jalan Kaliurang Km.23 , Ngipiksari 01/12 hargobinangun ,pakem,sleman jogja 55585, Yogyakarta<br>
+                        Indonesia<br>
+                        <strong>Marketing</strong><br>
+                        <strong>Mbak Wal</strong><br>
+                        <abbr title="Phone">Phone :</abbr> 0859-2748-9531 </br>
+                        <strong>Pak Rukimin</strong><br>
+                        <abbr title="Phone">Phone:</abbr>  0878-3999-8000 </br>
+                        <strong>Mas Mur</strong><br>
+                        <abbr title="Phone">Phone:</abbr> 0812-8464-3000 </br>
         
         </address>
                     </div>
@@ -506,9 +506,11 @@ antavaya tour travel  ">
     <!-- footer  Section
     ==========================================-->
 
+   
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="<?php echo site_url('resources/aio/js/jquery.1.11.1.js');?>"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script type="text/javascript" src="<?php echo site_url('resources/aio/js/bootstrap.js');?>"></script> 
     <script type="text/javascript" src="<?php echo site_url('resources/aio/js/SmoothScroll.js');?>"></script> 
@@ -531,10 +533,7 @@ antavaya tour travel  ">
 
         gtag('config', 'UA-109740438-1');
     </script>
-<!-- 
-============================================================== -->
 
-<!-- ===================================================================================== -->
 
 
    
