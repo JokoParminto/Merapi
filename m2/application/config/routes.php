@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $route['default_controller'] = 'home/';
 $route["jogjatour"] = "home";
-$route["superuser"] = "dashboard";
+$route["wal"] = "dashboard";
 $route["beranda"] = "dashboard";
 $route["photo"] = "m_photo/index";
 $route["promo"] = "m_promo/index";

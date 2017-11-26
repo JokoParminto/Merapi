@@ -39,7 +39,7 @@ if ($success) {
             <?php foreach($m_photo as $m){ ?>
                             <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
                                 <div class="card h-100">
-                                    <a href="#"><img class="card-img-top" style="-webkit-user-select: none;background-position: 0px 0px, 10px 10px;background-size: 20px 20px;background-image:linear-gradient(45deg, #eee 25%, transparent 25%, transparent 75%, #eee 75%, #eee 100%),linear-gradient(45deg, #eee 25%, white 25%, white 75%, #eee 75%, #eee 100%);" src="<?php echo site_url('images/'.$m["file_photo"].'');?>" alt=""></a>
+                                    <a href="#"><img class="card-img-top" style="-webkit-user-select: none;background-position: 0px 0px, 10px 10px;background-size: 20px 20px;background-image:linear-gradient(45deg, #eee 25%, transparent 25%, transparent 75%, #eee 75%, #eee 100%),linear-gradient(45deg, #eee 25%, white 25%, white 75%, #eee 75%, #eee 100%);" src="<?php echo site_url('images/thumbs/'.$m['file_photo'].'');?>" alt=""></a>
                                     <div class="card-body">
                                         <h4 class="card-title">
                                             <a href="#"><?php echo $m['nama_photo']; ?></a>
