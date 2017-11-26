@@ -70,10 +70,10 @@ antavaya tour travel  ">
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#mal-home" class="page-scroll">Home</a></li>
-                    <li><a href="#mal-about" class="page-scroll">About</a></li>
                     <li><a href="#mal-book" class="page-scroll">Paket Wisata</a></li>
                     <!-- <li><a href="#tf-services" class="page-scroll">Services</a></li>-->
                     <li><a href="#mal-gall" class="page-scroll">Gallery</a></li>
+                    <li><a href="#mal-about" class="page-scroll">About</a></li>
                     <li><a href="#mal-contact" class="page-scroll">Location</a></li>
                 </ul>
             </div>
@@ -84,7 +84,7 @@ antavaya tour travel  ">
 
     <!-- Home Page
     ==========================================-->
-    <section id="mal-home" class="text-center" style="background: url(<?php echo site_url('resources/aio/img/01.jpg');?>); background-size: cover;
+    <section id="mal-home" class="text-center" style="background: url(<?php echo site_url('resources/aio/img/home.jpg');?>); background-size: cover;
 	-moz-background-size: cover;
 	-webkit-background-size: cover; background-position: center;
 	background-attachment: fixed;
@@ -111,7 +111,7 @@ antavaya tour travel  ">
 
     <!-- Booking Page
     ==========================================-->
-    <section id="mal-book" class="text-center" style="background: url(<?php echo site_url('resources/aio/img/06.jpeg');?>);
+    <section id="mal-book" class="text-center" style="background: url(<?php echo site_url('resources/aio/img/promo.jpg');?>);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -146,7 +146,7 @@ antavaya tour travel  ">
 
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                         <div class="db-wrapper">
-                        <div class="db-pricing-eleven db-bk-color-two popular">
+                        <div class="db-pricing-eleven db-bk-color-one">
                         <div class="price">
                         <low><?php print_r($m_promo[1]['harga_promo']); ?></low>rb
                         <small>per jeep</small>
@@ -166,7 +166,7 @@ antavaya tour travel  ">
                    
             <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
                  <div class="db-wrapper">
-                <div class="db-pricing-eleven db-bk-color-three">
+                <div class="db-pricing-eleven db-bk-color-two popular">
                 <div class="price">
                 <low><?php print_r($m_promo[2]['harga_promo']); ?></low>rb
                 <small>per jeep</small>
@@ -326,7 +326,7 @@ antavaya tour travel  ">
 
     <!-- Testimonials Section
     ==========================================-->
-    <section id="mal-testimonials" style="background: url(<?php echo site_url('resources/aio/img/05.jpg');?>);
+    <section id="mal-testimonials" style="background: url(<?php echo site_url('resources/aio/img/testi.jpg');?>);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -464,7 +464,7 @@ antavaya tour travel  ">
 
     <!-- contct  Section
     ==========================================-->
-    <section id="mal-contact" class="text-center" style="background: url(<?php echo site_url('resources/aio/img/04.jpg');?>);
+    <section id="mal-contact" class="text-center" style="background: url(<?php echo site_url('resources/aio/img/footer.jpg');?>);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
