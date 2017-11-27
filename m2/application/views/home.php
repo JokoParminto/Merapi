@@ -6,9 +6,24 @@
 <meta charset="utf-8">
 <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Merapi Adventure Jogja</title>
-<noscript><meta http-equiv="refresh" content="0; url=<?php echo site_url('home/jsoff');?>" /></noscript>
-<meta name="description" content="">
+<noscript>
+    <meta http-equiv="refresh" content="0; url=<?php echo site_url('home/jsoff');?>" />
+</noscript>
+
+<meta http-equiv="Copyright" content="MERAPI ADVENTURE JOGJA">
+<meta name="author" content="Wedus Gembel Developer">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="language" content="Indonesia">
+<meta name="revisit-after" content="2">
+<meta name="webcrawlers" content="all">
+<meta name="rating" content="general">
+<meta name="spiders" content="all">
+
+<meta name="description" content="Merapi Adventure Jogja expert in Adventure packages , Rafting , Hiking , 
+Mount Merapi trekking,  Mount Merbabu trekking, Jeep Lava tour Merapi, Jeep Merapi Sunrise, 
+Gua Pindul Rafting, Elo River Rafting, Serayu River Rafting, Sikunir Dieng Golden sunrise">
 <meta name="keywords" content="travel and tour , tour n travel , tour dan travel , website tour and travel , 
 antavaya tour package , tour and travel packages , travel dan tour , tour travel terbaik , web tour travel , 
 antavaya tour travel , promo tour and travel , best tour travel , antavaya tour and travel , tour and travel terbaik , 
@@ -301,7 +316,7 @@ antavaya tour travel  ">
                     <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
                         <div class="boxi">
                             <a href="#" data-toggle="modal" data-target="#2">
-                            <img src="<?php echo site_url('images/'.$d['file_photo'].'');?>">
+                            <img src="<?php echo site_url('images/thumbs/'.$d['file_photo_thumbs'].'');?>">
                             </a>
                             <div class="modal fade" id="2" tabindex="-1" role="dialog">
                                 <div class="modal-dialog" role="document">
@@ -448,7 +463,7 @@ antavaya tour travel  ">
                 <div id="team" class="owl-carousel owl-theme row">
                 <?php foreach($m_photo_atas as $e){ ?>
                         <div class="item">
-                            <div class="thumbnail"> <img src="<?php echo site_url('images/'.$e['file_photo'].'');?>" alt="merapi jogja, merapi jeep tour" class="img-responsive team-img">
+                            <div class="thumbnail"> <img src="<?php echo site_url('images/thumbs/'.$e['file_photo_thumbs'].'');?>" alt="merapi jogja, merapi jeep tour" class="img-responsive team-img">
                                 <div class="caption">
                                     <h3 class="abt-hd"><?php echo $e['nama_photo']; ?></h3>
                                     <p class="abt-scrl"><?php echo $e['desc_photo']; ?></p>
