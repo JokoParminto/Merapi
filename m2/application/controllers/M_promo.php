@@ -47,7 +47,7 @@ class M_promo extends MY_Controller{
             );
             
             $m_promo_id = $this->M_promo_model->add_m_promo($params);
-            redirect('m_promo/index');
+            redirect('promo');
         }
         else
         {            
@@ -79,12 +79,12 @@ class M_promo extends MY_Controller{
                 $update = $this->M_promo_model->update_m_promo($id_promo,$params);
                 
                 if ($update) {
-                    $this->session->set_flashdata('success', 'Berhasil tambah data!');
+                    $this->session->set_flashdata('success', 'Berhasil update data!');
                 } else {
-                    $this->session->set_flashdata('error', 'Gagal menambahkan data!');
+                    $this->session->set_flashdata('error', 'Gagal update data!');
                 }
                 //redirect('event_event/index');            
-                redirect('m_promo/index');
+                redirect('promo');
             }
             else
             {
@@ -107,7 +107,7 @@ class M_promo extends MY_Controller{
         if(isset($m_promo['id_promo']))
         {
             $this->M_promo_model->delete_m_promo($id_promo);
-            redirect('m_promo/index');
+            redirect('promo');
         }
         else
             show_error('The m_promo you are trying to delete does not exist.');
