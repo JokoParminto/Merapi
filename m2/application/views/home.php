@@ -21,9 +21,10 @@
 <meta name="rating" content="general">
 <meta name="spiders" content="all">
 
-<meta name="description" content="Merapi Adventure Jogja expert in Adventure packages , Rafting , Hiking , 
-Mount Merapi trekking,  Mount Merbabu trekking, Jeep Lava tour Merapi, Jeep Merapi Sunrise, 
-Gua Pindul Rafting, Elo River Rafting, Serayu River Rafting, Sikunir Dieng Golden sunrise">
+<meta name="description" content="Merapi Adventure expert in Adventure packages , Rafting , Hiking , 
+Mount Merapi trekking, Mount Merbabu trekking, Jeep Lava tour Merapi, Jeep Merapi Sunrise, Gua Pindul Rafting, 
+Elo River Rafting, Serayu River Rafting, Sikunir Dieng Golden sunrise">
+
 <meta name="keywords" content="travel and tour , tour n travel , tour dan travel , website tour and travel , 
 antavaya tour package , tour and travel packages , travel dan tour , tour travel terbaik , web tour travel , 
 antavaya tour travel , promo tour and travel , best tour travel , antavaya tour and travel , tour and travel terbaik , 
@@ -37,7 +38,8 @@ travel tour packages , website tour and travel , best travel tour companies , to
 antavaya tour package , tour and travel packages , europe tour packages , international tour packages , 
 group tours and travel , domestic tour packages , group tours , tour & travels website , travel dan tour , 
 tour travel agency , group tour packages , tour travel terbaik , travels and tours , travel tour operator , 
-antavaya tour travel  ">
+antavaya tour travel, museum sisa hartaku jogja,merapi adventure,paket wisata merapi,volcano tour cangkringan,
+wisata gunung merapi,merapi lava tour, trekking merapi">
 <meta name="author" content="merapiadventurejogja">
 
 <!-- Favicons
@@ -492,35 +494,34 @@ antavaya tour travel  ">
                 </div>
                 <div class="row">
                     <div class="col-md-6 map-">
-                        <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyALTrcgfdAErmrmKhiE4JAEm6Bt-YaSkDA&q=Merapi+Adventure+Jogja,Daerah+Istimewa+Yogyakarta " 
+                        <!-- <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyALTrcgfdAErmrmKhiE4JAEm6Bt-YaSkDA&q=Merapi+Adventure+Jogja,Daerah+Istimewa+Yogyakarta " 
                             height="450" 
                             style="border:0; width:100%;" 
-                            allowfullscreen></iframe>
+                            allowfullscreen></iframe> -->
+                        <!-- New York, NY, USA (40.7127837, -74.00594130000002) -->
+                        <iframe width="100%" height="450" src="https://www.google.com/maps/embed/v1/place?q=-7.611501, 110.426701&amp;key=AIzaSyALTrcgfdAErmrmKhiE4JAEm6Bt-YaSkDA"></iframe>
                     </div>
                     <div class="col-md-6 text-center"> <i class="fa fa-5x fa-map-marker"></i>
                         <address>
-                        <strong>Merapi Adventure Jogja</strong><br>
-                        Jalan Kaliurang Km.23 , Ngipiksari 01/12 hargobinangun ,pakem,sleman jogja 55585, Yogyakarta<br>
-                        Indonesia<br>
-                        <strong>Marketing</strong><br>
-                        <strong>Mbak Wal</strong><br>
-                        <abbr title="Phone">Phone :</abbr> 0859-2748-9531 </br>
-                        <strong>Pak Rukimin</strong><br>
-                        <abbr title="Phone">Phone:</abbr>  0878-3999-8000 </br>
-                        <strong>Mas Mur</strong><br>
-                        <abbr title="Phone">Phone:</abbr> 0812-8464-3000 </br>
-        
-        </address>
+                            <strong>Merapi Adventure Jogja</strong><br>
+                            Jalan Kaliurang Km.23 , Ngipiksari 01/12 hargobinangun ,pakem,sleman jogja 55585, Yogyakarta<br>
+                            Indonesia<br>
+                            <strong>Marketing</strong><br>
+                            <strong>Mbak Wal</strong><br>
+                            <abbr title="Phone">Phone :</abbr> 0859-2748-9531 </br>
+                            <strong>Pak Rukimin</strong><br>
+                            <abbr title="Phone">Phone:</abbr>  0878-3999-8000 </br>
+                            <strong>Mas Mur</strong><br>
+                            <abbr title="Phone">Phone:</abbr> 0812-8464-3000 </br>
+                        </address>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
     <!-- footer  Section
     ==========================================-->
-
    
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -547,10 +548,7 @@ antavaya tour travel  ">
 
         gtag('config', 'UA-109740438-1');
     </script>
-
-
-
-   
+  
 </body>
  <!-- <script>
     document.onkeydown = function(e) {
