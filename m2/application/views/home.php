@@ -548,7 +548,7 @@ wisata gunung merapi,merapi lava tour, trekking merapi">
 
         gtag('config', 'UA-109740438-1');
     </script>
- <!-- <script>
+    <!-- <script>
     document.onkeydown = function(e) {
     if(event.keyCode == 123) {
     return false;
@@ -564,6 +564,6 @@ wisata gunung merapi,merapi lava tour, trekking merapi">
     }
     }
     
-</script>  -->
+    </script>  -->
 
 </html>
