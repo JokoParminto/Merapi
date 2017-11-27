@@ -26,9 +26,7 @@ class M_photo extends MY_Controller{
         for ($i=0; $i < count($data['m_photo']) ; $i++) {
             $data['m_photo'][$i]['file_photo'] = str_replace('.','_thumb.', $data['m_photo'][$i]['file_photo']);
         }
-        //print_r($data['m_photo']);
-        ////
-        //die();
+
         $data['_view'] = 'm_photo/index';
         $this->load->view('layouts/main',$data);
     }
@@ -51,9 +49,6 @@ class M_photo extends MY_Controller{
         $this->upload->do_upload('gambar');
         $namafile = array('upload_data' => $this->upload->data());
         
-  
-       
-        
         $config['image_library'] = 'gd2';
         //$config['source_image'] = './uploads/'.$filename.'.jpg';  #no need to make it static as you are allowing multiple extensions in allowed_types.
         $config['source_image'] = './images/'.$namafile['upload_data']['file_name'];
@@ -66,7 +61,6 @@ class M_photo extends MY_Controller{
         
         $this->image_lib->initialize($config);
         $this->image_lib->resize();
-        
         
         $params = array(
              'nama_photo' => $this->input->post('nama_photo'),
@@ -86,7 +80,7 @@ class M_photo extends MY_Controller{
             } else {
                 $this->session->set_flashdata('error', 'Gagal update data!');
             }
-            redirect('m_photo/index');
+            redirect('photo');
         } else {
             $m_photo_id = $this->M_photo_model->add_m_photo($params); 
             if ($m_photo_id) {
@@ -94,7 +88,7 @@ class M_photo extends MY_Controller{
             } else {
                 $this->session->set_flashdata('error', 'Gagal menambahkan data!');
             }
-            redirect('m_photo/index');
+            redirect('photo');
         }
     }  
 
@@ -121,7 +115,7 @@ class M_photo extends MY_Controller{
                 );
 
                 $this->M_photo_model->update_m_photo($id_photo,$params);            
-                redirect('m_photo/index');
+                redirect('photo');
             }
             else
             {
@@ -147,7 +141,7 @@ class M_photo extends MY_Controller{
         if(isset($m_photo['id_photo']))
         {
             $this->M_photo_model->delete_m_photo($id_photo);
-            redirect('m_photo/index');
+            redirect('photo');
         }
         else
             show_error('The m_photo you are trying to delete does not exist.');

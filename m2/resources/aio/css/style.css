@@ -1626,19 +1626,9 @@ ul.footer-social li {
 }
 
 
-/*=============================================================
-    Authour URL: www.designbootstrap.com
-    
-    http://www.designbootstrap.com/
-
-    License: MIT     
-========================================================  */
-
-
 /*============================================================
 BACKGROUND COLORS
 ============================================================*/
-
 .db-bk-color-one {
     background-color: #f55039;
 }
@@ -1654,16 +1644,12 @@ BACKGROUND COLORS
 .db-bk-color-six {
     background-color: #F59B24;
 }
-
-
 /*============================================================
 PRICING STYLES
 ==========================================================*/
-
 .db-padding-btm {
     padding-bottom: 50px;
 }
-
 .db-button-color-square {
     color: #fff;
     background-color: rgba(0, 0, 0, 0.50);
@@ -1673,11 +1659,12 @@ PRICING STYLES
     -moz-border-radius: 0px;
 }
 
-.db-button-color-square:hover {
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.50);
-    border: none;
-}
+    .db-button-color-square:hover {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.50);
+        border: none;
+    }
+
 
 .db-pricing-eleven {
     margin-bottom: 30px;
@@ -1688,56 +1675,57 @@ PRICING STYLES
     line-height: 30px;
 }
 
-.db-pricing-eleven ul {
-    list-style: none;
-    margin: 0;
-    text-align: center;
-    padding-left: 0px;
-}
+    .db-pricing-eleven ul {
+        list-style: none;
+        margin: 0;
+        text-align: center;
+        padding-left: 0px;
+    }
 
-.db-pricing-eleven ul li {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    cursor: pointer;
-}
+        .db-pricing-eleven ul li {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            cursor: pointer;
+        }
 
-.db-pricing-eleven ul li i {
-    margin-right: 5px;
-}
+            .db-pricing-eleven ul li i {
+                margin-right: 5px;
+            }
 
-.db-pricing-eleven .price {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 40px 20px 20px 20px;
-    font-size: 60px;
-    font-weight: 900;
-    color: #FFFFFF;
-}
 
-.db-pricing-eleven .price small {
-    color: #B8B8B8;
-    display: block;
-    font-size: 12px;
-    margin-top: 22px;
-}
+    .db-pricing-eleven .price {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 40px 20px 20px 20px;
+        font-size: 60px;
+        font-weight: 900;
+        color: #FFFFFF;
+    }
 
-.db-pricing-eleven .type {
-    background-color: #52E89E;
-    padding: 50px 20px;
-    font-weight: 900;
-    text-transform: uppercase;
-    font-size: 30px;
-}
+        .db-pricing-eleven .price small {
+            color: #B8B8B8;
+            display: block;
+            font-size: 12px;
+            margin-top: 22px;
+        }
 
-.db-pricing-eleven .pricing-footer {
-    padding: 20px;
-}
+    .db-pricing-eleven .type {
+        background-color: #52E89E;
+        padding: 50px 20px;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 30px;
+    }
 
-.db-attached>.col-lg-4,
-.db-attached>.col-lg-3,
-.db-attached>.col-md-4,
-.db-attached>.col-md-3,
-.db-attached>.col-sm-4,
-.db-attached>.col-sm-3 {
+    .db-pricing-eleven .pricing-footer {
+        padding: 20px;
+    }
+
+.db-attached > .col-lg-4,
+.db-attached > .col-lg-3,
+.db-attached > .col-md-4,
+.db-attached > .col-md-3,
+.db-attached > .col-sm-4,
+.db-attached > .col-sm-3 {
     padding-left: 0;
     padding-right: 0;
 }
@@ -1746,9 +1734,14 @@ PRICING STYLES
     margin-top: 10px;
 }
 
-.db-pricing-eleven.popular .price {
-    padding-top: 80px;
-}
+    .db-pricing-eleven.popular .price {
+        padding-top: 80px;
+    }
+
+/* 
+===========================================================
+=========================================================== */
+
 
 .jumbotron .blg-an {
     padding: 8px 10px;

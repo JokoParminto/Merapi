@@ -77,6 +77,8 @@ if ($success) {
   </button>
 </div>
 <div class="modal-body">
+    </br></br></br></br></br></br>
+    <h5 class="modal-title" id="exampleModalLabel">Add/Update Photo</h5>
     <form enctype="multipart/form-data" method="post" id="box_addit_photo" name="box_addit_photo" accept-charset="utf-8" action="<?php echo site_url('m_photo/add'); ?>">
         <div class="box-body">
             <div class="row clearfix">
@@ -114,7 +116,7 @@ if ($success) {
         </div>
     </div>
     <div class="modal-footer">
-        <button type="submit" class="btn btn-success">
+        <button type="submit" id="simpan" class="btn btn-success">
             <i class="fa fa-check"></i> Save
         </button>
     </form>
@@ -122,7 +124,7 @@ if ($success) {
 </div>
 </div>
 </div>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
 function addit_photo(id) { 
     jQuery('#blah').removeAttr('src') 
@@ -134,7 +136,6 @@ function addit_photo(id) {
                 dataType: "JSON",
                 success: function(data)
                 {   
-                    console.log(data)
                      $('[name="id_photo"]').val(data.id_photo);
                      $('[name="nama_photo"]').val(data.nama_photo);
                      $('[name="desc_photo"]').val(data.desc_photo);
@@ -162,4 +163,13 @@ function addit_photo(id) {
             reader.readAsDataURL(input.files[0]);
         }
     }
+    $('#gambar').bind('change', function(){
+        var ukurangambar = this.files[0].size;
+        if (ukurangambar > 2000000) {
+            alert('Maaf ukuran foto anda terlalu besar!')
+            document.getElementById("simpan").disabled = true;
+        } else {
+            document.getElementById("simpan").disabled = false;
+        }
+    })
 </script>

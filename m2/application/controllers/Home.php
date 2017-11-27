@@ -27,13 +27,14 @@ class Home extends CI_Controller{
             $data['m_promo_special'][$i]['isi_promo'] = implode($datacoma);
         }
         $data['m_photo_atas'] = $this->Home_model->get_all_m_photo_atas();
+        for ($i=0; $i < count($data['m_photo_atas']) ; $i++) {
+            $data['m_photo_atas'][$i]['file_photo_thumbs'] = str_replace('.','_thumb.', $data['m_photo_atas'][$i]['file_photo']);
+        }
         $data['m_photo_bawah'] = $this->Home_model->get_all_m_photo_bawah();
-        //$t = 1;
-        //while($t<100000000){ $t++;}
-        //$this->output->cache(1);
-        $data['_view'] = 'dashboard';
+        for ($i=0; $i < count($data['m_photo_bawah']) ; $i++) {
+            $data['m_photo_bawah'][$i]['file_photo_thumbs'] = str_replace('.','_thumb.', $data['m_photo_bawah'][$i]['file_photo']);
+        }
         $this->load->view('home', $data);
-        
     }
     function jsoff()
     {
