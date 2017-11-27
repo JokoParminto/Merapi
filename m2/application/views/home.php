@@ -320,16 +320,15 @@ wisata gunung merapi,merapi lava tour, trekking merapi">
                     <?php foreach($m_photo_bawah as $d){ ?>
                     <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
                         <div class="boxi">
-                            <a href="#" data-toggle="modal" data-target="#2">
-                            <img src="<?php echo site_url('images/thumbs/'.$d['file_photo_thumbs'].'');?>">
+                            <a href="#" data-toggle="modal" data-target="#<?php echo $d['id_photo'];?>">
+                            <img src="<?php echo site_url('images/'.$d['file_photo'].'');?>">
                             </a>
-                            <div class="modal fade" id="2" tabindex="-1" role="dialog">
+                            <div class="modal fade" id="<?php echo $d['id_photo'];?>" tabindex="-1" role="dialog">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                                         
                                             <img src="<?php echo site_url('images/'.$d['file_photo'].'');?>">
-                                        
                                     </div>
                                 </div>
                             </div>
@@ -337,9 +336,13 @@ wisata gunung merapi,merapi lava tour, trekking merapi">
                     </div>
                     <?php } ?>   
                 </div>
-                    
+                
+            </div>
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7UeCczDz3t0" allowfullscreen></iframe>
             </div>
         </div>
+        
     </div>
 </section>
 
@@ -551,11 +554,6 @@ wisata gunung merapi,merapi lava tour, trekking merapi">
 
         gtag('config', 'UA-109740438-1');
     </script>
-
-
-
-   
-</body>
  <script>
     document.onkeydown = function(e) {
     if(event.keyCode == 123) {
@@ -573,5 +571,10 @@ wisata gunung merapi,merapi lava tour, trekking merapi">
     }
     
 </script> 
+
+
+   
+</body>
+
 
 </html>
