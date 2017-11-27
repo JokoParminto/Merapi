@@ -72,7 +72,7 @@ wisata gunung merapi,merapi lava tour, trekking merapi">
     <![endif]-->
 </head>
 
-<!-- <body oncontextmenu="return false;"> -->
+<body oncontextmenu="return false;">
     <!-- Navigation
     ==========================================-->
     <nav id="mal-menu" class="navbar navbar-default navbar-fixed-top">

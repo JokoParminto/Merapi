@@ -77,6 +77,8 @@ if ($success) {
   </button>
 </div>
 <div class="modal-body">
+    </br></br></br></br></br></br>
+    <h5 class="modal-title" id="exampleModalLabel">Add/Update Photo</h5>
     <form enctype="multipart/form-data" method="post" id="box_addit_photo" name="box_addit_photo" accept-charset="utf-8" action="<?php echo site_url('m_photo/add'); ?>">
         <div class="box-body">
             <div class="row clearfix">

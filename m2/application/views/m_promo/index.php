@@ -70,6 +70,8 @@
         </div>
         </div>
             <div class="modal-body">
+                </br></br></br></br></br></br>
+                <h3 class="box-title">Tambah/Edit Event</h3>
                 <form enctype="multipart/form-data" method="post" id="form_update" name="form_update" accept-charset="utf-8" action="<?php echo site_url('m_promo/edit'); ?>">
                     <div class="box-body">
                         <div class="row clearfix">
