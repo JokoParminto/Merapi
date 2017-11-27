@@ -114,7 +114,7 @@ if ($success) {
         </div>
     </div>
     <div class="modal-footer">
-        <button type="submit" class="btn btn-success">
+        <button type="submit" id="simpan" class="btn btn-success">
             <i class="fa fa-check"></i> Save
         </button>
     </form>
@@ -134,7 +134,6 @@ function addit_photo(id) {
                 dataType: "JSON",
                 success: function(data)
                 {   
-                    console.log(data)
                      $('[name="id_photo"]').val(data.id_photo);
                      $('[name="nama_photo"]').val(data.nama_photo);
                      $('[name="desc_photo"]').val(data.desc_photo);
@@ -163,6 +162,12 @@ function addit_photo(id) {
         }
     }
     $('#gambar').bind('change', function(){
-        alert(this.files[0].size)
+        var ukurangambar = this.files[0].size;
+        if (ukurangambar > 2000000) {
+            alert('Maaf ukuran foto anda terlalu besar!')
+            document.getElementById("simpan").disabled = true;
+        } else {
+            document.getElementById("simpan").disabled = false;
+        }
     })
 </script>

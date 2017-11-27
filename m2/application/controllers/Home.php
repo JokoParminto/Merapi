@@ -34,12 +34,7 @@ class Home extends CI_Controller{
         for ($i=0; $i < count($data['m_photo_bawah']) ; $i++) {
             $data['m_photo_bawah'][$i]['file_photo_thumbs'] = str_replace('.','_thumb.', $data['m_photo_bawah'][$i]['file_photo']);
         }
-        //$t = 1;
-        //while($t<100000000){ $t++;}
-        //$this->output->cache(1);
-        //$data['_view'] = 'dashboard';
         $this->load->view('home', $data);
-        
     }
     function jsoff()
     {

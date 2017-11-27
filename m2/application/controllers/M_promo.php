@@ -67,13 +67,6 @@ class M_promo extends MY_Controller{
         
         if(isset($data['m_promo']['id_promo']))
         {
-            // $this->load->library('form_validation');
-
-			// $this->form_validation->set_rules('nama_promo','Nama Promo','required');
-			// $this->form_validation->set_rules('level_promo','Level Promo','required');
-			// $this->form_validation->set_rules('harga_promo','Harga Promo','required');
-			// $this->form_validation->set_rules('isi_promo','Isi Promo','required');
-            //$this->form_validation->run()
 			if(TRUE)     
             {   
                 $params = array(

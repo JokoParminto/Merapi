@@ -22,7 +22,7 @@
 
         <!-- Custom styles for this template -->
         <link href="<?php echo site_url('resources/css/4-col.css');?>" rel="stylesheet">
-
+        <link rel="shortcut icon" href="<?php echo site_url('resources/aio/img/fav.ico');?>" type="image/x-icon">
     </head>
     
     <body class="hold-transition skin-blue sidebar-mini">
@@ -51,7 +51,7 @@
                             <li class="dropdown user user-menu">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     <img src="<?php echo site_url('resources/img/user2-160x160.jpg');?>" class="user-image" alt="User Image">
-                                    <span class="hidden-xs">Admin</span>
+                                    <span class="hidden-xs"><?php echo $this->session->userdata['logged_in'];?></span>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <!-- User image -->
@@ -59,8 +59,8 @@
                                         <img src="<?php echo site_url('resources/img/user2-160x160.jpg');?>" class="img-circle" alt="User Image">
 
                                     <p>
-                                        Admin - Web Developer
-                                        <small>Member since Nov. 2012</small>
+                                        Admin - Merapi Adventure Jogja
+                                        <small>Member</small>
                                     </p>
                                     </li>
                                     <!-- Menu Footer-->
