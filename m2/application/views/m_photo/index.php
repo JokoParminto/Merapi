@@ -122,7 +122,7 @@ if ($success) {
 </div>
 </div>
 </div>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
 function addit_photo(id) { 
     jQuery('#blah').removeAttr('src') 
@@ -162,4 +162,7 @@ function addit_photo(id) {
             reader.readAsDataURL(input.files[0]);
         }
     }
+    $('#gambar').bind('change', function(){
+        alert(this.files[0].size)
+    })
 </script>
