@@ -520,9 +520,9 @@ wisata gunung merapi,merapi lava tour, trekking merapi">
         </div>
     </section>
 
-    <!-- footer  Section
-    ==========================================-->
-   
+  
+</body>
+ 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -548,8 +548,6 @@ wisata gunung merapi,merapi lava tour, trekking merapi">
 
         gtag('config', 'UA-109740438-1');
     </script>
-  
-</body>
  <!-- <script>
     document.onkeydown = function(e) {
     if(event.keyCode == 123) {
