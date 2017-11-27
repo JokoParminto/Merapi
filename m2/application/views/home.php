@@ -118,9 +118,10 @@ wisata gunung merapi,merapi lava tour, trekking merapi">
                 <p class="lead">Jeep Tour </br></br>
                     Marketing<br>
                     Mbak Wal<br>
-                     0859-2748-9531 </br></p>
-                <a href="#mal-book" class="fa fa-angle-down page-scroll"></a>
-            </div>
+                     0859-2748-9531 </br>
+                     <a href="#mal-book" class="fa fa-angle-down page-scroll"></a>
+ </p>
+                            </div>
         </div>
     </section>
 
@@ -555,7 +556,7 @@ wisata gunung merapi,merapi lava tour, trekking merapi">
 
    
 </body>
- <!-- <script>
+ <script>
     document.onkeydown = function(e) {
     if(event.keyCode == 123) {
     return false;
@@ -571,6 +572,6 @@ wisata gunung merapi,merapi lava tour, trekking merapi">
     }
     }
     
-</script>  -->
+</script> 
 
 </html>
